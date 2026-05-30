@@ -23,11 +23,11 @@ B 5 227.5 -12.5 232.5 -7.5 {name=BL
 dir=inout}
 B 5 227.5 47.5 232.5 52.5 {name=BLB
 dir=inout}
-B 5 117.5 -102.5 122.5 -97.5 {name=VDD
+B 5 117.5 -102.5 122.5 -97.5 {name=SRAM_VDD
 dir=inout}
 B 5 7.5 -12.5 12.5 -7.5 {name=WL
 dir=in}
-B 5 7.5 47.5 12.5 52.5 {name=WL
+B 5 7.5 47.5 12.5 52.5 {name=WWL
 dir=in}
 T {WL} 0 -40 0 0 0.4 0.4 {}
 T {BLB} 220 60 0 0 0.4 0.4 {}

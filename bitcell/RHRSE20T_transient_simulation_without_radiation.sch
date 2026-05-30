@@ -20,8 +20,8 @@ N 310 110 380 110 {lab=BL}
 N 310 170 380 170 {lab=BLB}
 N 20 110 90 110 {lab=WL}
 N -40 280 -40 320 {lab=0}
-N -40 170 -40 220 {lab=WL}
-N -40 170 90 170 {lab=WL}
+N -40 170 -40 220 {lab=WWL}
+N -40 170 90 170 {lab=WWL}
 N 20 -60 20 110 {lab=WL}
 N -40 -60 20 -60 {lab=WL}
 N -40 50 -40 90 {lab=0}
@@ -41,8 +41,8 @@ C {lab_pin.sym} 200 -30 0 0 {name=p16 sig_type=std_logic lab=SRAM_VDD}
 C {symbols/pfet_03v3.sym} 870 0 0 1 {name=M11
 L=0.28u
 W=0.22u
-nf=1
-m=3
+nf=3
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -62,14 +62,14 @@ C {lab_pin.sym} 380 110 0 1 {name=p2 sig_type=std_logic lab=BL}
 C {lab_pin.sym} 380 170 0 1 {name=p3 sig_type=std_logic lab=BLB}
 C {vsource.sym} -40 250 0 1 {name=V_WWL value="pulse 0 3.3 20n 100p 100p 50n 100n" savecurrent=false}
 C {gnd.sym} -40 320 0 1 {name=l3 lab=0}
-C {vsource.sym} -40 20 0 1 {name=V_WL value="pulse 0 3.3 20n 100p 100p 50n 100n" savecurrent=true}
+C {vsource.sym} -40 20 0 1 {name=V_WL value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
 C {gnd.sym} -40 90 0 1 {name=l4 lab=0}
 C {lab_pin.sym} 850 100 0 0 {name=p4 sig_type=std_logic lab=BL}
 C {symbols/pfet_03v3.sym} 680 140 0 1 {name=M1
 L=0.28u
 W=0.22u
-nf=1
-m=3
+nf=3
+m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -96,3 +96,4 @@ tran 100p 500n
 plot v(WL)+4 v(WWL)+4 v(BL) v(BLB)
 .endc" }
 C {lab_pin.sym} -40 -50 0 0 {name=p7 sig_type=std_logic lab=WL}
+C {lab_pin.sym} -40 180 0 0 {name=p8 sig_type=std_logic lab=WWL}
