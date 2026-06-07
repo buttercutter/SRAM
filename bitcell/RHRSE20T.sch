@@ -189,7 +189,7 @@ C {lab_pin.sym} 760 80 0 1 {name=p4 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 680 80 0 0 {name=M4
 L=0.28u
 W=0.22u
-nf=3
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -235,7 +235,7 @@ C {lab_pin.sym} 1160 10 0 0 {name=p8 sig_type=std_logic lab=Q}
 C {symbols/nfet_03v3.sym} 1180 80 0 1 {name=M7
 L=0.28u
 W=0.22u
-nf=3
+nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -356,7 +356,7 @@ C {lab_pin.sym} 1840 240 0 1 {name=p17 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 100 730 0 1 {name=M15
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -371,7 +371,7 @@ C {lab_pin.sym} 20 730 0 0 {name=p18 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 410 730 0 1 {name=M16
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -386,7 +386,7 @@ C {lab_pin.sym} 330 730 0 0 {name=p19 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 720 730 0 1 {name=M17
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -401,7 +401,7 @@ C {lab_pin.sym} 640 730 0 0 {name=p20 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 1040 730 0 1 {name=M18
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -416,7 +416,7 @@ C {lab_pin.sym} 960 730 0 0 {name=p21 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 1360 730 0 1 {name=M19
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
@@ -431,7 +431,7 @@ C {lab_pin.sym} 1280 730 0 0 {name=p22 sig_type=std_logic lab=SRAM_GND}
 C {symbols/nfet_03v3.sym} 1680 730 0 1 {name=M20
 L=0.28u
 W=0.22u
-nf=2
+nf=3
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
