@@ -42,7 +42,7 @@ C {symbols/pfet_03v3.sym} 870 0 0 1 {name=M11
 L=0.28u
 W=0.22u
 nf=3
-m=1
+m=3
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -53,14 +53,14 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {lab_pin.sym} 780 -90 0 0 {name=p28 sig_type=std_logic lab=SRAM_VDD}
-C {SRAM/RHRSE20T.sym} 80 120 0 0 {name=x1}
+C {RHRSE20T.sym} 80 120 0 0 {name=x1}
 C {gnd.sym} 200 310 0 0 {name=l1 lab=0}
 C {vsource.sym} 1090 -120 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} 1090 -50 0 0 {name=l2 lab=0}
 C {lab_pin.sym} 1090 -200 0 0 {name=p1 sig_type=std_logic lab=SRAM_VDD}
 C {lab_pin.sym} 380 110 0 1 {name=p2 sig_type=std_logic lab=BL}
 C {lab_pin.sym} 380 170 0 1 {name=p3 sig_type=std_logic lab=BLB}
-C {vsource.sym} -40 250 0 1 {name=V_WWL value="pulse 0 3.3 20n 100p 100p 50n 120n" savecurrent=false}
+C {vsource.sym} -40 250 0 1 {name=V_WWL value="pulse 0 3.3 20n 100p 100p 70n 120n" savecurrent=false}
 C {gnd.sym} -40 320 0 1 {name=l3 lab=0}
 C {vsource.sym} -40 20 0 1 {name=V_WL value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=true}
 C {gnd.sym} -40 90 0 1 {name=l4 lab=0}
@@ -69,7 +69,7 @@ C {symbols/pfet_03v3.sym} 680 140 0 1 {name=M1
 L=0.28u
 W=0.22u
 nf=3
-m=1
+m=3
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -81,9 +81,9 @@ spiceprefix=X
 }
 C {lab_pin.sym} 590 50 0 0 {name=p5 sig_type=std_logic lab=SRAM_VDD}
 C {lab_pin.sym} 660 240 0 0 {name=p6 sig_type=std_logic lab=BLB}
-C {vsource.sym} 760 220 0 0 {name=V_BLB value="pulse 0 3.3 20n 100p 100p 70n 100n" savecurrent=false}
+C {vsource.sym} 760 220 0 0 {name=V_BLB value="pulse 0 3.3 60n 100p 100p 70n 140n" savecurrent=false}
 C {gnd.sym} 760 290 0 1 {name=l5 lab=0}
-C {vsource.sym} 950 80 0 0 {name=V_BL value="pulse 0 3.3 0 100p 100p 50n 100n" savecurrent=false}
+C {vsource.sym} 950 80 0 0 {name=V_BL value="pulse 0 3.3 0 100p 100p 50n 80n" savecurrent=false}
 C {gnd.sym} 950 150 0 1 {name=l6 lab=0}
 C {code_shown.sym} -260 -270 0 0 {name=NGSPICE only_toplevel=true value=".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
