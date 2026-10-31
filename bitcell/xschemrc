@@ -1,0 +1,23 @@
+# ========================================================================
+# Local xschemrc for GF180MCUD
+# ========================================================================
+
+# 1. Force environment variables to target the GF180MCUD PDK variant
+set env(PDK) "gf180mcuD"
+set PDK "gf180mcuD"
+
+# 2. Source the official PDK xschemrc definition to map symbols and models
+if {[file exists $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc]} {
+    source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+} else {
+    puts "Error: Could not find PDK xschemrc at $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc"
+}
+
+# 3. Explicitly override simulation model paths just in case they stick
+set MODELS_NGSPICE "$env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/models"
+set MODELS_XYCE    "$env(PDK_ROOT)/$env(PDK)/libs.tech/xyce/models"
+
+# 4. Add the PDK symbols and current project directory
+append XSCHEM_LIBRARY_PATH :$env(PDK_ROOT)/$env(PDK)/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :[pwd]
+
