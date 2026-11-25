@@ -33,7 +33,7 @@ N 430 30 460 30 {lab=SRAM_VDD}
 N 680 270 680 310 {lab=0}
 N 1030 -40 1030 0 {lab=0}
 N 540 -140 540 -100 {lab=0}
-N 540 -250 540 -200 {lab=x1.S0}
+N 540 -250 540 -200 {lab=x1.S2}
 N 440 260 500 260 {lab=SRAM_GND}
 N 500 150 500 230 {lab=BLB}
 N 570 120 570 260 {lab=#net1}
@@ -76,7 +76,7 @@ C {lab_pin.sym} 240 110 0 1 {name=p2 sig_type=std_logic lab=BL}
 C {lab_pin.sym} 240 170 0 1 {name=p3 sig_type=std_logic lab=BLB}
 C {vsource.sym} -180 250 0 1 {name=V_WWL value=3.3 savecurrent=false}
 C {gnd.sym} -180 320 0 1 {name=l3 lab=0}
-C {vsource.sym} -180 20 0 1 {name=V_WL value=0 savecurrent=true}
+C {vsource.sym} -180 20 0 1 {name=V_WL value=3.3 savecurrent=true}
 C {gnd.sym} -180 90 0 1 {name=l4 lab=0}
 C {lab_pin.sym} 860 -110 0 0 {name=p4 sig_type=std_logic lab=BL}
 C {symbols/pfet_03v3.sym} 520 120 0 1 {name=M1
@@ -95,7 +95,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 430 30 0 0 {name=p5 sig_type=std_logic lab=SRAM_VDD}
 C {lab_pin.sym} 500 190 0 0 {name=p6 sig_type=std_logic lab=BLB}
-C {vsource.sym} 680 240 0 0 {name=V_BLB value=3.3 savecurrent=false}
+C {vsource.sym} 680 240 0 0 {name=V_BLB value=0 savecurrent=false}
 C {gnd.sym} 680 310 0 1 {name=l5 lab=0}
 C {vsource.sym} 1030 -70 0 0 {name=V_BL value=0 savecurrent=false}
 C {gnd.sym} 1030 0 0 1 {name=l6 lab=0}
@@ -113,7 +113,7 @@ C {lab_pin.sym} -180 -50 0 0 {name=p7 sig_type=std_logic lab=WL}
 C {lab_pin.sym} -180 180 0 0 {name=p8 sig_type=std_logic lab=WWL}
 C {vsource.sym} 540 -170 0 0 {name=V_sweep value=3.3 savecurrent=false}
 C {gnd.sym} 540 -100 0 0 {name=l7 lab=0}
-C {lab_pin.sym} 540 -250 0 0 {name=p9 sig_type=std_logic lab=x1.S0}
+C {lab_pin.sym} 540 -250 0 0 {name=p9 sig_type=std_logic lab=x1.S2}
 C {symbols/nfet_03v3.sym} 520 260 0 1 {name=M2
 L=0.28u
 W=0.22u
